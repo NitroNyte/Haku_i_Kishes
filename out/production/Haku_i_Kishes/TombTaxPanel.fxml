@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="960.0" style="-fx-background-color: #f2f3fb;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TombTaxController">
+   <children>
+      <TableView fx:id="Person_table" layoutX="162.0" layoutY="65.0" prefHeight="445.0" prefWidth="785.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="147.99993896484375" resizable="false" text="ID" />
+            <TableColumn fx:id="col_name" minWidth="0.0" prefWidth="124.800048828125" resizable="false" text="Emri" />
+            <TableColumn fx:id="col_fatherName" minWidth="0.0" prefWidth="111.60003662109375" resizable="false" text="Emri i babes" />
+            <TableColumn fx:id="col_surname" minWidth="0.0" prefWidth="119.5999755859375" resizable="false" text="Mbiemri" />
+            <TableColumn fx:id="col_region" minWidth="0.0" prefWidth="104.7999267578125" resizable="false" text="Vendi" />
+            <TableColumn fx:id="col_phoneNum" prefWidth="176.39990234375" resizable="false" text="Numri i telefonit" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" fill="#2d3033" height="566.0" layoutY="-1.0" stroke="#1d22289e" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #1D2228;" width="146.0" />
+      <ImageView fx:id="goBack" fitHeight="32.0" fitWidth="32.0" layoutX="19.0" layoutY="14.0" onMouseClicked="#goBackHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res_folder/back.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="19.0" layoutY="485.0" mnemonicParsing="false" onAction="#openSearchForm" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" stylesheets="@StartPage.css" text="Filtro sipas..." />
+      <Button layoutX="19.0" layoutY="275.0" mnemonicParsing="false" onAction="#restoreOriginalData" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" stylesheets="@StartPage.css" text="Kethu pas" />
+      <Button layoutX="19.0" layoutY="65.0" mnemonicParsing="false" onAction="#personFormTombSwitch" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" stylesheets="@StartPage.css" text="Shto" textAlignment="CENTER">
+         <font>
+            <Font name="Montserrat Medium" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="19.0" layoutY="172.0" mnemonicParsing="false" onAction="#deletePerson" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" stylesheets="@StartPage.css" text="Fshij">
+         <font>
+            <Font name="Montserrat Medium" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="19.0" layoutY="385.0" mnemonicParsing="false" onAction="#StatisticsButton" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" stylesheets="@StartPage.css" text="Statistikat">
+         <font>
+            <Font name="Montserrat Medium" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="393.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabelja më të dhënat primare" wrappingWidth="322.000048828125">
+         <font>
+            <Font name="Montserrat Black" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

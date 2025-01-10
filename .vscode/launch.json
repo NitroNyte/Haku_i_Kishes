@@ -1,0 +1,172 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Haku_i_Kishes_adc11c0/StartPage",
+            "request": "launch",
+            "mainClass": "Haku_i_Kishes_adc11c0/StartPage",
+            "projectName": "Haku_i_Kishes_adc11c0"
+        },
+        {
+            "type": "java",
+            "name": "DBConnection",
+            "request": "launch",
+            "mainClass": "DBConnection",
+            "classPaths": [
+                "C:/SQLite/sqlite-jdbc-3.46.0.0.jar"
+            ],
+            "projectName": "Haku_i_Kishes_adc11c0"
+        },
+        {
+            "type": "java",
+            "name": "MainSceneController",
+            "request": "launch",
+            "mainClass": "MainSceneController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "StartPage",
+            "request": "launch",
+            "mainClass": "StartPage",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml",
+            "noDebug": false,
+            "__progressId": "793e714b-d382-4eb6-bf79-feebf86b0bca",
+            "__origin": "internal"
+        },
+        {
+            "type": "java",
+            "name": "TableViewController",
+            "request": "launch",
+            "mainClass": "TableViewContoller",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "ChurchDocumentPrinter",
+            "request": "launch",
+            "mainClass": "ChurchDocumentPrinter",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "ChurchDocumentWorkerPrinter",
+            "request": "launch",
+            "mainClass": "ChurhcDocumentWorkerPrinter",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "FormTombTaxController",
+            "request": "launch",
+            "mainClass": "FormTombTaxController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "FormViewController",
+            "request": "launch",
+            "mainClass": "FormViewController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "PaymentController",
+            "request": "launch",
+            "mainClass": "PaymentController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "PaymentFormController",
+            "request": "launch",
+            "mainClass": "PaymentFormController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "SearchFormTombTaxController",
+            "request": "launch",
+            "mainClass": "SearchFormTombTaxController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "PaymentFormWorkerController",
+            "request": "launch",
+            "mainClass": "PaymentFormWorkerController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "PaymentWorkerController",
+            "request": "launch",
+            "mainClass": "PaymentWorkerController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "SearchFormTransactionController",
+            "request": "launch",
+            "mainClass": "SearchFormTransactionController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "TombTaxController",
+            "request": "launch",
+            "mainClass": "TombTaxController",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Statistics_tax",
+            "request": "launch",
+            "mainClass": "Statistics_tax",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Statistics_tax_Results",
+            "request": "launch",
+            "mainClass": "Statistics_tax_Results",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Statistics_worker",
+            "request": "launch",
+            "mainClass": "Statistics_worker",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Statistics_worker_Results",
+            "request": "launch",
+            "mainClass": "Statistics_worker_Results",
+            "projectName": "Haku_i_Kishes_adc11c0",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

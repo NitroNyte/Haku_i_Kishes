@@ -1,0 +1,26 @@
+Version 1
+Created the program
+
+Version 1.01 20/10/2024
+Fixed a bug where you could not delete a payment from the database of taxes in tombtax.
+Added styles to tables
+Fixed the payment form not clearing some fields.
+Added fonts to the source for the downloader to have them such that the client can run those specific fonts.
+
+-Changes approved by Gabriel Kolaj (NT).
+
+
+Version 1.02 "Date was not recorded"
+Fixed a bug where spaces where not allowed, did some styling.
+Fixed other stuff that I could not remember.
+
+-Changes approved by Gabriel Kolaj (NT).
+
+
+Version 1.03 17/12/2024
+Added the edit button where you can edit the person from the database and change different things(excluding ID which is unique).
+Implemented a cross design at the end of the documents so that it appears.
+This change was implemented for Church and Tomb Taxes.
+
+
+-Changes approved by Gabriel Kolaj (NT).

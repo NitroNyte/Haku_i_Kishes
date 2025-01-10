@@ -1,0 +1,33 @@
+@font-face {
+    src: url("res_folder/Montserrat-Medium.ttf");
+}
+
+/* Define the second custom font */
+@font-face {
+    src: url("res_folder/Montserrat-Medium.ttf");
+}
+
+
+
+.PayButton {
+    -fx-color: #FFF;
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #7b7b7b, 10, 0.5, 0, 0);
+}
+
+.PayButton:hover {
+    -fx-font-family: 'Montserrat-Bold';
+    -fx-text-fill: #FFF;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #fff, 15, 0.7, 0, 0);
+}
+
+.PayButton:pressed {
+    -fx-font-family: 'Montserrat-Medium';
+    -fx-text-fill: #FFF;
+    -fx-font-weight: bold;
+}
+
+
+
