@@ -27,7 +27,7 @@
             "request": "launch",
             "mainClass": "MainSceneController",
             "projectName": "Haku_i_Kishes_adc11c0",
-            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-23.0.1_windows-x64_bin-sdk/javafx-sdk-23.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -35,7 +35,7 @@
             "request": "launch",
             "mainClass": "StartPage",
             "projectName": "Haku_i_Kishes_adc11c0",
-            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml",
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-23.0.1_windows-x64_bin-sdk/javafx-sdk-23.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
             "noDebug": false,
             "__progressId": "793e714b-d382-4eb6-bf79-feebf86b0bca",
             "__origin": "internal"
@@ -46,7 +46,7 @@
             "request": "launch",
             "mainClass": "TableViewContoller",
             "projectName": "Haku_i_Kishes_adc11c0",
-            "vmArgs": "--module-path \"C:/Program Files/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/openjfx-23.0.1_windows-x64_bin-sdk/javafx-sdk-23.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",

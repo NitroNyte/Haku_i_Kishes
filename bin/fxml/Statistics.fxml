@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1060.0" style="-fx-background-color: #1D2228;" stylesheets="@../css/MainStyleSheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainClasses.StatisticsController">
+   <children>
+      <HBox alignment="TOP_CENTER" layoutX="180.0" layoutY="14.0" spacing="200.0" AnchorPane.bottomAnchor="234.8" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <VBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Haku i kishës">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <PieChart fx:id="pieChart1" prefHeight="275.0" prefWidth="250.0" />
+                  <ComboBox fx:id="listOfItems1" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Mirëmbajtja e varrezave">
+                     <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <PieChart fx:id="pieChart2" prefHeight="275.0" prefWidth="250.0" />
+                  <ComboBox fx:id="listOfItems2" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goBackHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="151.8" layoutY="409.2" AnchorPane.bottomAnchor="145.2" AnchorPane.leftAnchor="151.8" AnchorPane.rightAnchor="599.8" AnchorPane.topAnchor="409.2">
+         <children>
+            <VBox alignment="CENTER" prefHeight="46.0" prefWidth="310.0" spacing="10.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pagesa totale e vitit" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Medium" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="totalSumChurchTax" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sasia Totale" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Medium" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="599.8" layoutY="409.2" AnchorPane.bottomAnchor="145.2" AnchorPane.leftAnchor="599.8" AnchorPane.rightAnchor="151.79999999999995" AnchorPane.topAnchor="409.2">
+         <children>
+            <VBox alignment="CENTER" prefWidth="310.0" spacing="10.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pagesa totale e vitit" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Medium" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="totalSumPersonWorker" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sasia Totale" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Medium" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" layoutX="356.0" layoutY="579.0" AnchorPane.bottomAnchor="5.800000000000001" AnchorPane.leftAnchor="356.0" AnchorPane.rightAnchor="356.0" AnchorPane.topAnchor="578.8">
+         <children>
+            <VBox alignment="BOTTOM_CENTER">
+               <children>
+                  <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Faqja e statistikave nuk punon me opsionin full screen!">
+                     <font>
+                        <Font name="Montserrat Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

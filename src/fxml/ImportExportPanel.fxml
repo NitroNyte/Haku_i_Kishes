@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="1060.0" prefHeight="600.0" prefWidth="1060.0" style="-fx-background-color: #1D2228;" styleClass="pane" stylesheets="@../css/MainStyleSheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ImportExportController">
+   <children>
+      <HBox alignment="CENTER" layoutX="264.0" layoutY="-24.0" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="264.0" AnchorPane.topAnchor="-24.0">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="542.0" fitWidth="532.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/thumbnail_cross2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="180.0" layoutY="150.0" prefHeight="450.0" prefWidth="700.0" spacing="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="350.0" prefWidth="250.0" spacing="50.0">
+               <children>
+                  <Button id="PayButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#setPersonTableDB" prefHeight="100.0" prefWidth="250.0" style="-fx-background-radius: 20px; -fx-background-color: #7C0902;" styleClass="PayButton" stylesheets="@StartPage.css" text="Importo të dhënat për personat e regjistruar" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Montserrat Black" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button id="PayButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#exportPersonAllDB" prefHeight="100.0" prefWidth="250.0" style="-fx-background-radius: 20px; -fx-background-color: #7C0902;" styleClass="PayButton" stylesheets="@StartPage.css" text="Eksporto të dhënat " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Montserrat Black" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" spacing="50.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#setPaymentTaxDB" prefHeight="100.0" prefWidth="250.0" style="-fx-background-radius: 20px; -fx-background-color: #7C0902;" styleClass="PayButton" stylesheets="@StartPage.css" text="Importo të dhënat për transaksione lidhur me hakun e kishës" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Montserrat Black" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button id="PayButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#setPaymentWorkerDB" prefHeight="100.0" prefWidth="250.0" style="-fx-background-radius: 20px; -fx-background-color: #7C0902;" styleClass="PayButton" stylesheets="@StartPage.css" text="Importo trasaksionet për puntort e varrezave" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Montserrat Black" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goBackHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

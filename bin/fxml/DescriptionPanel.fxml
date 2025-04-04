@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="690.0" style="-fx-background-color: #1D2228;" stylesheets="@../css/MainStyleSheet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DescriptionChurchTaxController">
+   <children>
+      <HBox alignment="BOTTOM_CENTER" layoutX="39.0" layoutY="180.0" prefHeight="212.0" prefWidth="610.0" AnchorPane.bottomAnchor="93.19999999999999" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="180.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="236.0" prefWidth="610.0">
+               <children>
+                  <TextArea fx:id="description" prefHeight="212.0" prefWidth="610.0" styleClass="TextField" wrapText="true">
+                     <font>
+                        <Font name="Montserrat Bold" size="15.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="41.2" layoutY="14.0" prefHeight="160.0" prefWidth="610.0" spacing="20.0" AnchorPane.bottomAnchor="311.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <VBox prefHeight="131.0" prefWidth="372.0" spacing="10.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Vërejtje për:" textAlignment="CENTER" wrappingWidth="500.0">
+                     <font>
+                        <Font name="Montserrat Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="userName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Emri, emri i babes dhe mbiemri" textAlignment="CENTER" wrappingWidth="500.0">
+                     <font>
+                        <Font name="Montserrat Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="infoText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="rreth pageses se hakut..." textAlignment="CENTER" wrappingWidth="500.0">
+                     <font>
+                        <Font name="Montserrat Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="242.0" layoutY="402.0" prefHeight="53.0" prefWidth="205.0" spacing="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="242.0" AnchorPane.rightAnchor="243.0" AnchorPane.topAnchor="402.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="205.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#saveToPerson" prefHeight="50.0" prefWidth="85.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" text="Ruaj" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#cancelNotice" prefHeight="50.0" prefWidth="85.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" text="Ndërpre" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

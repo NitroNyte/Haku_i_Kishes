@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="750.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChurchDocumentPrinter">
+   <content>
+      <AnchorPane fx:id="panel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="750.0" style="-fx-background-color: White;" stylesheets="@../css/MainStyleSheet.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7c0902" height="77.0" layoutX="13.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="725.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="62.0" layoutX="13.0" layoutY="104.0" stroke="BLACK" strokeType="INSIDE" width="725.0" />
+            <Text layoutX="181.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statuti i së drejtës pronësore i dioqezës Prizeren-Prishtinë" wrappingWidth="386.7194938659668">
+               <font>
+                  <Font name="Montserrat Black" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="362.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Neni 6" wrappingWidth="42.31947708129883">
+               <font>
+                  <Font name="Montserrat Black" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="63.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Kontributi i rregullt i besimtarëve (haku i kishës), i paraparë në nenin 5.2 të këtij Statuti Ekonomik, ndahet në tri kategori të veçanta:" wrappingWidth="623.5194816589355">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="73.0" layoutY="628.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Për zanatxhinjë, punëtorë e fermerë, jo më pak se 30 euro në vit;" wrappingWidth="408.3194694519043">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="73.0" layoutY="649.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Për ata që zhvillojnë aktivitete private të biznesit, 1%, por jo më pak se 50 euro në vit;" wrappingWidth="525.9195365905762">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="73.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-Të punsuar me punë të përkohshme jashtë vendit, jo më pak se 100 euro në vit." wrappingWidth="525.9195365905762">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="63.0" layoutY="699.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Të varfëritë duhet të lirohen nga detyrimi, por vendimin e merr famullitari, pasi të ketë konsultuar Këshillin e famullisë." wrappingWidth="623.5194816589355">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="263.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Haku i Kishës" textAlignment="CENTER" wrappingWidth="238.73997497558594">
+               <font>
+                  <Font name="Montserrat Black" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="idField" editable="false" layoutX="21.0" layoutY="129.0" prefHeight="25.0" prefWidth="104.0" style="-fx-alignment: center;" styleClass="TextArea">
+               <font>
+                  <Font name="Montserrat Bold" size="10.0" />
+               </font></TextField>
+            <TextField fx:id="personField" layoutX="140.0" layoutY="129.0" prefHeight="25.0" prefWidth="179.0" style="-fx-alignment: center;" styleClass="TextArea">
+               <font>
+                  <Font name="Montserrat Bold" size="10.0" />
+               </font></TextField>
+            <TextField fx:id="regionField" layoutX="477.0" layoutY="129.0" prefHeight="25.0" prefWidth="155.0" style="-fx-alignment: center;" styleClass="TextArea">
+               <font>
+                  <Font name="Montserrat Bold" size="10.0" />
+               </font></TextField>
+            <TextField fx:id="phoneNumField" layoutX="336.0" layoutY="129.0" prefHeight="25.0" prefWidth="125.0" style="-fx-alignment: center;" styleClass="TextArea">
+               <font>
+                  <Font name="Montserrat Bold" size="10.0" />
+               </font></TextField>
+            <Text layoutX="66.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="206.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personi">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="349.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numri i telefonit">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="514.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendi jetesës">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="massText" layoutX="20.0" layoutY="813.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="237.0" />
+            <Text layoutX="82.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vula e famullisë" wrappingWidth="86.736328125" />
+            <Text layoutX="648.0" layoutY="742.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nënshkrimi" wrappingWidth="61.536376953125" />
+            <Line endX="100.0" layoutX="605.0" layoutY="809.0" startX="-14.000030517578125" />
+            <Line endX="727.0" layoutX="23.0" layoutY="509.0" startX="-23.0000057220459" />
+            <TableView fx:id="Payment_table" layoutX="14.0" layoutY="179.0" prefHeight="226.0" prefWidth="724.0" stylesheets="@StartPage.css">
+               <columns>
+                  <TableColumn fx:id="col_year" prefWidth="88.39999389648438" text="Viti" />
+                  <TableColumn fx:id="col_payment" prefWidth="193.20004272460938" text="Shuma e pageses" />
+                  <TableColumn fx:id="col_date" prefWidth="169.20001220703125" text="Data e pageses" />
+                  <TableColumn fx:id="col_transaction" prefWidth="131.20001220703125" text="Nr. i Transaksionit" />
+                  <TableColumn fx:id="col_paymentStatus" prefWidth="136.39990234375" text="Statusi i pageses" />
+               </columns>
+            </TableView>
+            <TextArea fx:id="noticeArea" layoutX="13.0" layoutY="416.0" prefHeight="85.0" prefWidth="725.0" promptText="Shenime shtesë:" styleClass="TextField" wrapText="true" AnchorPane.topAnchor="416.0">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font></TextArea>
+            <HBox layoutX="264.0" layoutY="799.0" spacing="20.0">
+               <children>
+                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveButtonImage" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" stylesheets="@StartPage.css" text="Ruaj" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Medium" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="printButton" mnemonicParsing="false" onAction="#printButtonFunc" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" stylesheets="@StartPage.css" text="Printo" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Medium" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <ImageView blendMode="LIGHTEN" fitHeight="74.0" fitWidth="566.0" layoutX="660.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/CrossBetter.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <Button fx:id="saveNotice" layoutX="30.0" layoutY="524.0" mnemonicParsing="false" onAction="#saveToNoticesForPerson" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #7C0902; -fx-background-radius: 15px;" styleClass="PayButton" stylesheets="@StartPage.css" text="Edito" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Button>
+            <Text layoutX="649.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jasht vendit">
+               <font>
+                  <Font name="Montserrat Medium" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="statusText" layoutX="666.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="CENTER">
+               <font>
+                  <Font name="Montserrat Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
