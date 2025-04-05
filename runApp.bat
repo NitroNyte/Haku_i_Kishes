@@ -1,3 +1,3 @@
 @echo off
-java --module-path "C:\Program Files\openjfx-23.0.1_windows-x64_bin-sdk\javafx-sdk-23.0.1\lib" --add-modules javafx.controls,javafx.fxml,javafx.swing -jar Haku_i_Kishes.jar
+java --module-path "Please provide the path to the JavaFX library" --add-modules javafx.controls,javafx.fxml,javafx.swing -jar Haku_i_Kishes.jar
 pause

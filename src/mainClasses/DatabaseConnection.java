@@ -2,7 +2,6 @@ package mainClasses;
 
 
 
-import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -117,9 +116,12 @@ public class DatabaseConnection {
 
     public static void deletePaymentForPersonFromDatabase(int personID) {
         try (Connection conn = getConnection();
-                PreparedStatement stmt = conn.prepareStatement("DELETE FROM payment_tax WHERE personID = ?");) {
+                PreparedStatement stmt = conn.prepareStatement("DELETE FROM payment_tax WHERE personID = ?");
+                PreparedStatement stmtForWorker = conn.prepareStatement("DELETE FROM payment_worker WHERE personID = ?");) {
             stmt.setInt(1, personID);
+            stmtForWorker.setInt(1, personID);
             stmt.executeUpdate();
+            stmtForWorker.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -129,6 +131,10 @@ public class DatabaseConnection {
             alert.showAndWait(); 
         }
     }
+
+
+
+    
 
     public static void deletePaymentFromDatabase(int transactionID) {
         String sql = "DELETE FROM payment_tax WHERE transactionID = ?";
